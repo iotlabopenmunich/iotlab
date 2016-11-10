@@ -1,0 +1,36 @@
+/*
+ * IoT-Lab: config.h-dist - configuration template
+ * copy this file to config.h and modify it to fit your needs
+ * -> check all  FIXME  comments carefully.
+ */
+#ifndef __CONFIG_H__
+#define __CONFIG_H__
+
+// unique device id as string
+#define DEVICE_ID       /* FIXME: DEVICE ID as STRING */
+
+// WiFi connection configuration
+#define WIFI_PASSWORD   /* FIXME: WiFi PASSWORD as STRING */
+#define WIFI_SSID       /* FIXME: WiFi SSID as STRING */
+// maximum number of tries during wifi connection setup
+#define WIFI_MAX_TRIES  30
+// delay in ms between checks during wifi connection setup
+#define WIFI_DELAY_TRY  1000
+
+// MQTT connection configuration
+#define MQTT_HOST       /* FIXME: HOSTNAME MQTT BROKER as STRING */
+#define MQTT_PORT       1883   
+#define MQTT_USER       ""
+#define MQTT_PASSWORD   ""
+
+// The base topic. We will use two topics to communicate with
+// the backend: 
+//   * MQTT_TOPIC/<device-id>/order  - to this topic the device publishes it's 
+//                                     orders
+//   * MQTT_TOPIC/<device-id>/status - on this topic the backend publishes 
+//                                     status updates
+#define MQTT_TOPIC      "iotlab2016/device"
+
+
+#endif
+

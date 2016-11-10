@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+version="1.0"
+width="420"
+height="320">
+<defs>
+  <g id="dot">
+    <circle cx="0" cy="0" r="0.4" fill="black" />
+    <circle cx="0" cy="0" r="0.2" fill="white" />
+  </g>
+
+  <g id="dots5v">
+    <rect x="-0.15" y="-0.15" width="0.3" height="4" fill="black" />
+    <use xlink:href="#dot" />
+    <use xlink:href="#dot" transform="translate(0 1)" />
+    <use xlink:href="#dot" transform="translate(0 2)" />
+    <use xlink:href="#dot" transform="translate(0 3)" />
+    <use xlink:href="#dot" transform="translate(0 4)" />
+  </g>
+
+  <g id="dots5x5">
+    <use xlink:href="#dots5v" />
+    <use xlink:href="#dots5v" transform="translate(1 0)" />
+    <use xlink:href="#dots5v" transform="translate(2 0)" />
+    <use xlink:href="#dots5v" transform="translate(3 0)" />
+    <use xlink:href="#dots5v" transform="translate(4 0)" />
+  </g>
+
+  <g id="dots10">
+    <use xlink:href="#dot" />
+    <use xlink:href="#dot" transform="translate(1 0)" />
+    <use xlink:href="#dot" transform="translate(2 0)" />
+    <use xlink:href="#dot" transform="translate(3 0)" />
+    <use xlink:href="#dot" transform="translate(4 0)" />
+    
+    <use xlink:href="#dot" transform="translate(5 0)" />
+    <use xlink:href="#dot" transform="translate(6 0)" />
+    <use xlink:href="#dot" transform="translate(7 0)" />
+    <use xlink:href="#dot" transform="translate(8 0)" />
+    <use xlink:href="#dot" transform="translate(9 0)" />
+  </g>
+
+  <g id="dots10h">
+    <rect x="-0.15" y="-0.15" width="9" height="0.3" fill="black" />
+    <use xlink:href="#dots10" />
+  </g>
+
+  <g id="dots20h">
+    <rect x="-0.15" y="-0.15" width="19" height="0.3" fill="black" />
+    <use xlink:href="#dots10" />
+    <use xlink:href="#dots10" transform="translate(10 0)" />
+  </g>
+</defs>
+
+<rect width="420" height="320" fill="#fff" />
+
+<g transform="scale(20) translate(1 1)">
+  <use xlink:href="#dots20h" transform="translate(0 0)" />
+  <use xlink:href="#dots20h" transform="translate(0 1)" />
+  <g id="dots5x20">
+    <use xlink:href="#dots5x5" transform="translate(0 2)" />
+    <use xlink:href="#dots5x5" transform="translate(5 2)" />
+    <use xlink:href="#dots5x5" transform="translate(10 2)" />
+    <use xlink:href="#dots5x5" transform="translate(15 2)" />
+  </g>
+  <use xlink:href="#dots10h" transform="translate(0 7)" />
+  <use xlink:href="#dots10h" transform="translate(10 7)" />
+  
+  <use xlink:href="#dots5x20" transform="translate(0 6)" />
+  
+  <use xlink:href="#dots20h" transform="translate(0 13)" />
+  <use xlink:href="#dots20h" transform="translate(0 14)" />
+</g>
+
+</svg>
