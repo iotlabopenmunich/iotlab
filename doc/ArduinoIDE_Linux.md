@@ -20,7 +20,7 @@ Silicon Labs CP210x RS232 serial adaptor driver
 ```
 $ wget https://downloads.arduino.cc/arduino-1.6.12-linux64.tar.xz
 $ xz -dc arduino-1.6.12-linux64.tar.xz | (cd /opt; sudo tar xvf -)
-$ /opt/arduino-1.16.12/arduino &
+$ /opt/arduino-1.6.12/arduino &
 ```
 Note: of course you can install the Arduino-IDE to a different directory, where no admin/sudo rights are
 required for installation.
